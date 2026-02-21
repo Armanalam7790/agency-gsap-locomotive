@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body{
+    background: #000;
+    /* scroll-behavior: smooth; */
+}
+main{
+     height: 100%;
+  width: 100%;
+   background: black;
+  color: white;
+  /* padding:  10px 10%; */
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:  10px 10%;
+    align-items: center;
+    height: 60px;
+    font-family: sans-serif;
+    background: rgb(0, 0, 0);
+    text-transform: capitalize;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 0.6px solid rgb(8, 7, 7);
+    z-index: 2;
+}
+nav img{
+    height: 120px;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav ul li{
+    list-style: none;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: #ff5900;
+}
+
+nav button{
+    padding: 10px 25px;
+    background: #ff5900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.page1{
+  margin-top: 60px;
+    height: calc(100% - 60px);
+    /* padding: ; */
+    width: 100%;
+    /* background: coral; */
+    display: flex;
+    justify-content: space-between;align-items: center;
+    gap: 40px;
+       padding:  10px 10%;
+   
+}
+.left{
+    /* background: red; */
+   height: 500px;
+    width: 650px;
+    /* padding: 40px; */
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+    padding: 7% 4%;
+
+   /* justify-content: space-between; */
+}
+.right{
+    /* background: rgb(29, 189, 15); */
+    height: 500px;
+    width: 550px;
+    
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.page1 .left h1{
+    font-size: 3.9rem;
+    line-height: 1; 
+}
+.page1 .left h2{
+    font-size: 2rem;
+    /* line-height: 1; */
+    font-weight: 200;
+}
+.page1 .left p{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #eadada;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.page1 .left h1 span{
+    color: #ff5900;
+}
+.page1 .left .social{
+    height: 50px;
+    width: fit-content;
+    /* background: rgb(255, 0, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.page1 .left .social span{
+    font-size: 2rem;
+}
+.page1 .left .social span:hover{
+    color: #ff5900;
+    cursor: pointer;
+}
+/* --------------------------------------- */
+.page2{
+    padding: 10px 10%;
+    height: 50%;
+    width: 100%;
+    /* background: red; */
+     display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+ .page2 {
+    background: #000000; 
+    display: flex;
+    gap: 20px;
+    padding: 10px 10%;
+}
+
+.page2 .elem {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding:30px  35px;
+    color: #fff;
+    min-height: 300px;
+    /* padding: ; */
+    text-transform: capitalize;
+    /* text-align: center; */
+}
+.page2 .elem h1{
+    font-size: 1.5rem;
+}
+.page2 .elem p{
+    font: 1em ;
+    text-align:start;
+}
+.page2 .elem span{
+    padding: 10px;
+    font-size: 1.5rem;
+    display: block;
+}
+.page2 .elem span i{
+    font-size: 2rem;
+}
+.page2 .elem:hover{
+    background: #ff5900;
+}
+
+
+
+/* ----------------------------------------- */
+
+/* .marquee{
+    height: 30%;
+    width: 100%;
+
+    display: flex;
+    padding: 20px;
+    animation-name: anime;
+    overflow: hidden;
+    animation-duration: 5s;
+    padding: 0 50px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+} .marquee img{
+    height: 40px;
+    width: 100%;
+} */
+ .parent{
+    /* background: red; */
+   width: 100%;
+  padding: 5% 10%;   
+   display: flex;
+   overflow: hidden;
+   margin-top: 20px;
+}
+
+.parent img{
+   width: 100%; animation-name: anime;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   padding: 0 80px;
+}
+
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.page3{
+height: 100%;
+width: 100%;
+background: rgb(0, 0, 0);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.page3 .container{
+    /* height: 80%; */
+    width: 90%;
+    background: white;
+    border-radius: 100px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page3 .container .left img{
+    height: 110%;
+}
+.page3 .container .right{
+ 
+    padding-top: 10%;
+}
+.page3 .container .right h1{
+    font-size: 2.4rem;
+    margin-bottom: 5px;
+}
+.page3 .container .right span{
+    color: #ff5900;
+}
+.page3 .container .right  p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+footer{
+    height: 77%;
+    width: 100%;
+    background: #000000c0;
+     border-top:  0.6px solid rgba(255, 255, 255, 0.434); 
+    
+    padding: 5% 10%;
+    text-transform: capitalize;
+    position: relative;
+}
+footer .one{
+    display: flex;
+    justify-content: space-between;
+}
+footer .first h3{
+font-size:3rem ;
+padding: 5px;
+}
+footer .first p{
+font-size:1.3rem ;
+padding: 5px;
+}
+
+footer button{
+    padding: 10px 25px;
+    background: #ff5900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border:  2px solid #ff5900;
+   
+
+}
+footer .two{
+    /* background: red; */
+    width: 100%;
+     display: flex;
+  /* gap: 10px; */
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  padding: 0 10%;
+}
+footer .two .ele{
+height: 200px;
+width: 400px;
+/* border: 2px solid hotpink; */
+
+}
+footer .two .ele h6{
+    text-align:  center;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color: rgba(245, 222, 179, 0.541);
+    font-weight: 200;
+    
+}
+footer .two .ele h4{
+    text-align:  center;
+    font-size: 1rem;
+    padding-top: 10px;
+    font-weight: 400;
+    /* padding-top: 30px; */
+}
+footer .two .ele img{
+    height: 120px;
+    text-align: center;
+    /* padding: 20px; */
+}
+
+footer .social{
+    height: 50px;
+    width: fit-content;
+    /* background: rgb(255, 0, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+footer .social span{
+    font-size: 2rem;
+}
+footer .social span:hover{
+    color: #ff5900;
+    cursor: pointer;
+}
